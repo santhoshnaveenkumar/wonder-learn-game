@@ -8,35 +8,70 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Kid-friendly bright color palette */
+    --background: 220 100% 97%;
+    --foreground: 230 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 230 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 230 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Bright blue primary */
+    --primary: 220 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm orange secondary */
+    --secondary: 25 100% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft backgrounds */
+    --muted: 220 60% 95%;
+    --muted-foreground: 230 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Cheerful green accent */
+    --accent: 140 85% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Friendly red for errors */
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Success color */
+    --success: 140 85% 50%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Warning color */
+    --warning: 45 100% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Fun purple */
+    --fun: 270 85% 65%;
+    --fun-foreground: 0 0% 100%;
+
+    --border: 220 60% 90%;
+    --input: 220 60% 95%;
+    --ring: 220 100% 55%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(140 85% 65%));
+    --gradient-fun: linear-gradient(135deg, hsl(var(--fun)), hsl(280 85% 75%));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--secondary)), hsl(35 100% 70%));
+    --gradient-background: linear-gradient(180deg, hsl(var(--background)), hsl(220 100% 95%));
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Shadows */
+    --shadow-fun: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    --shadow-celebration: 0 20px 50px -10px hsl(var(--success) / 0.4);
 
     --sidebar-background: 0 0% 98%;
 
