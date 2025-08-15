@@ -1,10 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { CluesDisplay } from "./CluesDisplay";
 import { cn } from "@/lib/utils";
 
 interface QuizCardProps {
-  image: string;
+  image?: string;
   question: string;
   answer?: string;
+  clues?: string[];
   showAnswer: boolean;
   className?: string;
   children?: React.ReactNode;
@@ -14,6 +16,7 @@ export const QuizCard = ({
   image, 
   question, 
   answer, 
+  clues,
   showAnswer, 
   className,
   children 
@@ -32,14 +35,21 @@ export const QuizCard = ({
             {question}
           </h2>
           
-          {/* Image */}
-          <div className="relative mx-auto w-64 h-64 rounded-2xl overflow-hidden shadow-lg">
-            <img 
-              src={image} 
-              alt="Quiz question" 
-              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            />
-          </div>
+          {/* Image (only show for logo and flag questions) */}
+          {image && (
+            <div className="relative mx-auto w-64 h-64 rounded-2xl overflow-hidden shadow-lg">
+              <img 
+                src={image} 
+                alt="Quiz question" 
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+          )}
+          
+          {/* Clues for person identification */}
+          {clues && (
+            <CluesDisplay clues={clues} className="max-w-lg mx-auto" />
+          )}
           
           {/* Answer reveal */}
           {showAnswer && answer && (

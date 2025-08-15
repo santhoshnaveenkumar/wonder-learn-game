@@ -61,7 +61,7 @@ export const QuizGame = () => {
         {/* Timer */}
         {!showAnswer && (
           <TimerDisplay
-            duration={10}
+            duration={8}
             onTimeUp={handleTimeUp}
             isActive={timerActive}
             className="max-w-md mx-auto"
@@ -73,6 +73,7 @@ export const QuizGame = () => {
           image={currentQuestion.image}
           question={currentQuestion.question}
           answer={currentQuestion.answer}
+          clues={currentQuestion.clues}
           showAnswer={showAnswer}
           className="max-w-2xl mx-auto"
         >
