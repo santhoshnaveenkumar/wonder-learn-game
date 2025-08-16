@@ -332,14 +332,14 @@ const flagQuestions: Question[] = [
   { id: 66, type: 'flag', question: "Which country's flag is this?", image: "/Brunei.png", answer: "Brunei", category: "Flags" },
   { id: 67, type: 'flag', question: "Which country's flag is this?", image: "/Kiribati.png", answer: "Kiribati", category: "Flags" },
   { id: 68, type: 'flag', question: "Which country's flag is this?", image: "/Suriname.png", answer: "Suriname", category: "Flags" },
-  { id: 69, type: 'flag', question: "Which country's flag is this?", image: "/Ethiopia.png", answer: "Ethiopia", category: "Flags" },
+  { id: 69, type: 'flag', question: "Which country's flag is this?", image: "/Niger.png", answer: "Niger", category: "Flags" },
   { id: 70, type: 'flag', question: "Which country's flag is this?", image: "/tunisa.png", answer: "Tunisia", category: "Flags" }
 ];
 
 // Logo identification questions
 const logoQuestions: Question[] = [
   { id: 71, type: 'logo', question: "Which company's logo is this?", image: "/apple.png", answer: "Apple", category: "Logos" },
-  { id: 72, type: 'logo', question: "Which company's logo is this?", image: "/Nike.png", answer: "Nike", category: "Logos" },
+  { id: 72, type: 'logo', question: "Which company's logo is this?", image: "/telegram.png", answer: "Huawei", category: "Logos" },
   { id: 73, type: 'logo', question: "Which company's logo is this?", image: "/McDonald.png", answer: "McDonald's", category: "Logos" },
   { id: 74, type: 'logo', question: "Which company's logo is this?", image: "/google.png", answer: "Google", category: "Logos" },
   { id: 75, type: 'logo', question: "Which logo is this?", image: "/askhoka.png", answer: "Ashoka Chakra", category: "Logos" },
@@ -358,7 +358,7 @@ const logoQuestions: Question[] = [
   { id: 88, type: 'logo', question: "Which company's logo is this?", image: "/shell.png", answer: "Shell", category: "Logos" },
   { id: 89, type: 'logo', question: "Which company's logo is this?", image: "/linkedin.png", answer: "LinkedIn", category: "Logos" },
   { id: 90, type: 'logo', question: "Which company's logo is this?", image: "/dominos pizza.png", answer: "Domino's Pizza", category: "Logos" },
-  { id: 91, type: 'logo', question: "Which company's logo is this?", image: "/spacex.png", answer: "SpaceX", category: "Logos" },
+  { id: 91, type: 'logo', question: "Which company's logo is this?", image: "/superman.png", answer: "Superman", category: "Logos" },
   { id: 92, type: 'logo', question: "Which company's logo is this?", image: "/rolls royce.png", answer: "Rolls-Royce", category: "Logos" },
   { id: 93, type: 'logo', question: "Which company's logo is this?", image: "/tiktok.png", answer: "Tiktok", category: "Logos" },
   { id: 94, type: 'logo', question: "Which logo is this?", image: "/java.png", answer: "Java language", category: "Logos" },
