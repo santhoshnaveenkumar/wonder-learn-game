@@ -339,7 +339,7 @@ const flagQuestions: Question[] = [
 // Logo identification questions
 const logoQuestions: Question[] = [
   { id: 71, type: 'logo', question: "Which company's logo is this?", image: "/apple.png", answer: "Apple", category: "Logos" },
-  { id: 72, type: 'logo', question: "Which company's logo is this?", image: "/telegram.png", answer: "Huawei", category: "Logos" },
+  { id: 72, type: 'logo', question: "Which company's logo is this?", image: "/Telegram.png", answer: "Huawei", category: "Logos" },
   { id: 73, type: 'logo', question: "Which company's logo is this?", image: "/McDonald.png", answer: "McDonald's", category: "Logos" },
   { id: 74, type: 'logo', question: "Which company's logo is this?", image: "/google.png", answer: "Google", category: "Logos" },
   { id: 75, type: 'logo', question: "Which logo is this?", image: "/askhoka.png", answer: "Ashoka Chakra", category: "Logos" },
